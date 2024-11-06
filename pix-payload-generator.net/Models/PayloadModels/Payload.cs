@@ -5,12 +5,12 @@
         /// <summary>
         /// Informações do comerciante
         /// </summary>
-        public Merchant Merchant { get; protected set; }
+        public Merchant Merchant { get; set; }
 
         /// <summary>
         /// Chave pix, se telefone colocar +55
         /// </summary>
-        public string PixKey { get; protected set; }
+        public string PixKey { get; set; }
 
         /// <summary>
         /// Descrição que aparece no momento do pagamento
@@ -20,7 +20,7 @@
         /// <summary>
         /// Id da transação
         /// </summary>
-        public string TxId { get; protected set; }
+        public string TxId { get; set; }
 
         /// <summary>
         /// Valor da transação, duas casas decimais, separadas por ponto e não tenha separação de milhar
@@ -30,12 +30,12 @@
         /// <summary>
         /// Url do payload dinâmico
         /// </summary>
-        public string Url { get; protected set; }
+        public string Url { get; set; }
 
         /// <summary>
         /// Define se o pagamento pode ser feito apenas uma vez
         /// </summary>
-        public bool UniquePayment { get; protected set; }
+        public bool UniquePayment { get; set; }
     }
 
     public class StaticPayload : Payload
